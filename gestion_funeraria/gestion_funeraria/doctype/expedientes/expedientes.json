@@ -1,0 +1,258 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-28 16:17:26.163003",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_tab",
+  "nombre_empresa",
+  "tipo_expediente",
+  "status",
+  "fecha_solicitud",
+  "fecha_servicio",
+  "municipio_servicio",
+  "publicable",
+  "email_contacto",
+  "telefono_contacto",
+  "compania_aseguradora",
+  "floristeria_colaboradora",
+  "aviso_floristeria",
+  "fallecido",
+  "descripcion",
+  "observaciones",
+  "datos_economicos",
+  "cliente_facturacion",
+  "importe_previsto",
+  "importe_facturado",
+  "fecha_facturacion",
+  "importe_cobrado",
+  "fecha_cobro",
+  "datos_esquela_tab",
+  "fecha_fallecimiento",
+  "datos_familiares",
+  "descripcion_esquela",
+  "fecha_hora_publicacion_minima",
+  "permitir_recuerdos",
+  "permitir_condolencias",
+  "documentos_tab",
+  "documentacion_asociada",
+  "_vista_previa",
+  "vista_previa"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Estado",
+   "options": "Solicitado\nEn curso\nFinalizado\nFacturado\nCobrado"
+  },
+  {
+   "fieldname": "fecha_solicitud",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha solicitud"
+  },
+  {
+   "fieldname": "fecha_servicio",
+   "fieldtype": "Date",
+   "label": "Fecha servicio"
+  },
+  {
+   "fieldname": "municipio_servicio",
+   "fieldtype": "Data",
+   "label": "Municipio servicio"
+  },
+  {
+   "fieldname": "publicable",
+   "fieldtype": "Select",
+   "label": "Publicable",
+   "options": "Si\nNo"
+  },
+  {
+   "fieldname": "cliente_facturacion",
+   "fieldtype": "Data",
+   "label": "Cliente Facturacion"
+  },
+  {
+   "fieldname": "email_contacto",
+   "fieldtype": "Data",
+   "label": "Email contacto"
+  },
+  {
+   "fieldname": "telefono_contacto",
+   "fieldtype": "Phone",
+   "label": "Telefono contacto"
+  },
+  {
+   "fieldname": "floristeria_colaboradora",
+   "fieldtype": "Data",
+   "label": "Floristeria colaboradora"
+  },
+  {
+   "fieldname": "fallecido",
+   "fieldtype": "Data",
+   "label": "Fallecido"
+  },
+  {
+   "fieldname": "observaciones",
+   "fieldtype": "Text",
+   "label": "Observaciones"
+  },
+  {
+   "fieldname": "importe_facturado",
+   "fieldtype": "Currency",
+   "label": "Importe facturado"
+  },
+  {
+   "fieldname": "importe_cobrado",
+   "fieldtype": "Currency",
+   "label": "Importe cobrado"
+  },
+  {
+   "fieldname": "fecha_cobro",
+   "fieldtype": "Date",
+   "label": "Fecha cobro"
+  },
+  {
+   "fieldname": "fecha_fallecimiento",
+   "fieldtype": "Data",
+   "label": "Fecha fallecimiento"
+  },
+  {
+   "fieldname": "datos_familiares",
+   "fieldtype": "Text",
+   "label": "Datos familiares"
+  },
+  {
+   "fieldname": "descripcion_esquela",
+   "fieldtype": "Text",
+   "label": "Descripcion esquela"
+  },
+  {
+   "fieldname": "permitir_recuerdos",
+   "fieldtype": "Select",
+   "label": "Permitir recuerdos",
+   "options": "Si\nNo"
+  },
+  {
+   "fieldname": "permitir_condolencias",
+   "fieldtype": "Select",
+   "label": "Permitir condolencias",
+   "options": "Si\nNo"
+  },
+  {
+   "fieldname": "fecha_hora_publicacion_minima",
+   "fieldtype": "Datetime",
+   "label": "Fecha y hora publicacion m\u00ednima"
+  },
+  {
+   "fieldname": "compania_aseguradora",
+   "fieldtype": "Data",
+   "label": "Compa\u00f1ia aseguradora"
+  },
+  {
+   "fieldname": "aviso_floristeria",
+   "fieldtype": "Select",
+   "label": "Aviso a floristeria",
+   "options": "Si\nNo"
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Data",
+   "label": "Descripcion"
+  },
+  {
+   "fieldname": "fecha_facturacion",
+   "fieldtype": "Date",
+   "label": "Fecha facturaci\u00f3n"
+  },
+  {
+   "fieldname": "datos_esquela_tab",
+   "fieldtype": "Tab Break",
+   "label": "Datos esquela"
+  },
+  {
+   "fieldname": "importe_previsto",
+   "fieldtype": "Currency",
+   "label": "Importe previsto"
+  },
+  {
+   "fieldname": "documentacion_asociada",
+   "fieldtype": "Table",
+   "label": "Documentacion asociada",
+   "options": "Documentacion asociada"
+  },
+  {
+   "fieldname": "nombre_empresa",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Empresa",
+   "options": "Empresas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vista_previa",
+   "fieldtype": "HTML",
+   "label": "Vista previa"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "_vista_previa",
+   "fieldtype": "Section Break",
+   "label": "Vista previa"
+  },
+  {
+   "fieldname": "documentos_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documentos"
+  },
+  {
+   "fieldname": "general_tab",
+   "fieldtype": "Tab Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "tipo_expediente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tipo",
+   "options": "Tipo expedientes"
+  },
+  {
+   "fieldname": "datos_economicos",
+   "fieldtype": "Tab Break",
+   "label": "Datos economicos"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-29 12:03:35.224098",
+ "modified_by": "Administrator",
+ "module": "Gestion funeraria",
+ "name": "Expedientes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
