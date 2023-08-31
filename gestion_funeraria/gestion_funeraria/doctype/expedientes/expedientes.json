@@ -10,16 +10,23 @@
   "general_tab",
   "nombre_empresa",
   "tipo_expediente",
+  "publicable",
+  "section_break_pzqy",
   "status",
   "fecha_solicitud",
-  "fecha_servicio",
+  "column_break_dgex",
   "municipio_servicio",
-  "publicable",
+  "fecha_servicio",
+  "contacto_section",
   "email_contacto",
+  "column_break_fgro",
   "telefono_contacto",
+  "section_break_zqdj",
   "compania_aseguradora",
-  "floristeria_colaboradora",
   "aviso_floristeria",
+  "column_break_urhs",
+  "floristeria_colaboradora",
+  "section_break_imlp",
   "fallecido",
   "descripcion",
   "observaciones",
@@ -54,23 +61,23 @@
    "fieldname": "fecha_solicitud",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Fecha solicitud"
+   "label": "Fecha de solicitud"
   },
   {
    "fieldname": "fecha_servicio",
    "fieldtype": "Date",
-   "label": "Fecha servicio"
+   "label": "Fecha de servicio"
   },
   {
    "fieldname": "municipio_servicio",
    "fieldtype": "Data",
-   "label": "Municipio servicio"
+   "label": "Municipio de servicio"
   },
   {
+   "default": "0",
    "fieldname": "publicable",
-   "fieldtype": "Select",
-   "label": "Publicable",
-   "options": "Si\nNo"
+   "fieldtype": "Check",
+   "label": "Publicable"
   },
   {
    "fieldname": "cliente_facturacion",
@@ -80,17 +87,17 @@
   {
    "fieldname": "email_contacto",
    "fieldtype": "Data",
-   "label": "Email contacto"
+   "label": "Email de contacto"
   },
   {
    "fieldname": "telefono_contacto",
    "fieldtype": "Phone",
-   "label": "Telefono contacto"
+   "label": "Tel\u00e9fono de contacto"
   },
   {
    "fieldname": "floristeria_colaboradora",
    "fieldtype": "Data",
-   "label": "Floristeria colaboradora"
+   "label": "Florister\u00eda colaboradora"
   },
   {
    "fieldname": "fallecido",
@@ -133,16 +140,16 @@
    "label": "Descripcion esquela"
   },
   {
+   "default": "0",
    "fieldname": "permitir_recuerdos",
-   "fieldtype": "Select",
-   "label": "Permitir recuerdos",
-   "options": "Si\nNo"
+   "fieldtype": "Check",
+   "label": "Permitir recuerdos"
   },
   {
+   "default": "0",
    "fieldname": "permitir_condolencias",
-   "fieldtype": "Select",
-   "label": "Permitir condolencias",
-   "options": "Si\nNo"
+   "fieldtype": "Check",
+   "label": "Permitir condolencias"
   },
   {
    "fieldname": "fecha_hora_publicacion_minima",
@@ -155,15 +162,15 @@
    "label": "Compa\u00f1ia aseguradora"
   },
   {
+   "default": "0",
    "fieldname": "aviso_floristeria",
-   "fieldtype": "Select",
-   "label": "Aviso a floristeria",
-   "options": "Si\nNo"
+   "fieldtype": "Check",
+   "label": "Aviso a florister\u00eda"
   },
   {
    "fieldname": "descripcion",
    "fieldtype": "Data",
-   "label": "Descripcion"
+   "label": "Descripci\u00f3n"
   },
   {
    "fieldname": "fecha_facturacion",
@@ -216,21 +223,50 @@
    "label": "General"
   },
   {
-   "fieldname": "tipo_expediente",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Tipo",
-   "options": "Tipo expedientes"
-  },
-  {
    "fieldname": "datos_economicos",
    "fieldtype": "Tab Break",
    "label": "Datos economicos"
+  },
+  {
+   "fieldname": "column_break_urhs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_zqdj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_pzqy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_dgex",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contacto_section",
+   "fieldtype": "Section Break",
+   "label": "Contacto"
+  },
+  {
+   "fieldname": "column_break_fgro",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_imlp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tipo_expediente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tipo de expediente/servicio",
+   "options": "Tipo expedientes"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-29 12:03:35.224098",
+ "modified": "2023-08-31 09:44:17.662291",
  "modified_by": "Administrator",
  "module": "Gestion funeraria",
  "name": "Expedientes",
@@ -249,7 +285,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
