@@ -9,8 +9,9 @@
  "field_order": [
   "general_tab",
   "nombre_empresa",
-  "tipo_expediente",
   "publicable",
+  "column_break_uqxz",
+  "tipo_expediente",
   "section_break_pzqy",
   "status",
   "fecha_solicitud",
@@ -39,11 +40,21 @@
   "fecha_cobro",
   "datos_esquela_tab",
   "fecha_fallecimiento",
+  "column_break_dtaa",
+  "fecha_hora_publicacion_minima",
+  "section_break_qkqa",
   "datos_familiares",
   "descripcion_esquela",
-  "fecha_hora_publicacion_minima",
+  "section_break_viqr",
   "permitir_recuerdos",
+  "column_break_ombg",
   "permitir_condolencias",
+  "column_break_csse",
+  "permitir_flores",
+  "section_break_msja",
+  "tiempo_flores",
+  "section_break_vvqr",
+  "idioma_adicional",
   "documentos_tab",
   "documentacion_asociada",
   "_vista_previa",
@@ -262,11 +273,62 @@
    "in_list_view": 1,
    "label": "Tipo de expediente/servicio",
    "options": "Tipo expedientes"
+  },
+  {
+   "fieldname": "column_break_uqxz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "permitir_flores",
+   "fieldtype": "Check",
+   "label": "Permitir flores"
+  },
+  {
+   "fieldname": "tiempo_flores",
+   "fieldtype": "Float",
+   "label": "Tiempo m\u00ednimo flores (horas)",
+   "non_negative": 1,
+   "precision": "1"
+  },
+  {
+   "fieldname": "idioma_adicional",
+   "fieldtype": "Select",
+   "label": "Idioma adicional",
+   "options": "Ingl\u00e9s"
+  },
+  {
+   "fieldname": "column_break_dtaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qkqa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_viqr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ombg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_csse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_msja",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_vvqr",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-31 09:44:17.662291",
+ "modified": "2023-08-31 11:18:44.720144",
  "modified_by": "Administrator",
  "module": "Gestion funeraria",
  "name": "Expedientes",
